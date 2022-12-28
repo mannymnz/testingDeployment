@@ -12,6 +12,7 @@ export default async (req, res) => {
             .toArray();
         res.json(data)
     } catch (e) {
+        res.json({message: "error did not work lmao"})
         console.error(e)
     }
 }
