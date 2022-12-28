@@ -4,7 +4,7 @@ import { InferGetServerSidePropsType } from 'next'
 import axios from "axios"
 import { GOOGLE_FONT_PROVIDER } from 'next/dist/shared/lib/constants'
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   try {
     await clientPromise
     // `await clientPromise` will use the default database passed in the MONGODB_URI
