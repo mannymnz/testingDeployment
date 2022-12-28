@@ -32,13 +32,6 @@ export default function Home({
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   console.log("MongoDB Connected?:", isConnected)
 
-  axios.get("/api/ex").then(
-    (res) => {
-      console.log(res.data)
-    }
-  ).catch(
-    (e) => (console.log(e))
-  )
   return (
       <div>
         hello
