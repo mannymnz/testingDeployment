@@ -36,6 +36,8 @@ export default function Home({
     (res) => {
       console.log(res.data)
     }
+  ).catch(
+    (e) => (console.log(e))
   )
   return (
       <div>
